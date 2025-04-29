@@ -1,1 +1,44 @@
+// Demonstrating primitive and non-primitive data types in Java
+public class Main{
+    public static void main(String[] args) {
+
+        // -------- Primitive Data Types --------
+
+        byte b = 100; // 1 byte, range: -128 to 127
+        System.out.println("byte: " + b);
+
+        short s = 20000; // 2 bytes, range: -32,768 to 32,767
+        System.out.println("short: " + s);
+
+        int i = 123456; // 4 bytes, range: -2^31 to 2^31-1
+        System.out.println("int: " + i);
+
+        long l = 12345678900L; // 8 bytes, large range (end with 'L')
+        System.out.println("long: " + l);
+
+        float f = 3.14f; // 4 bytes, ~7 decimal digits precision (end with 'f')
+        System.out.println("float: " + f);
+
+        double d = 123.456789; // 8 bytes, ~15 decimal digits precision
+        System.out.println("double: " + d);
+
+        char c = 'A'; // 2 bytes, stores Unicode character
+        System.out.println("char: " + c);
+
+        boolean flag = true; // 1 bit, stores true or false (actual size JVM-dependent)
+        System.out.println("boolean: " + flag);
+
+
+        // -------- Non-Primitive Data Types --------
+
+        String name = "Tony Stark"; // String is a class (non-primitive)
+        System.out.println("String: " + name);
+
+        int[] marks = {90, 85, 88}; // Array of integers (non-primitive)
+        System.out.println("Array: " + marks[0] + " " + marks[1] + " " + marks[2]);
+
+
+    }
+}
+
 
