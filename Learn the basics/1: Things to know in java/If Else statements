@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int marks = 44; // Student's marks (change value to test different grades)
+
+        // Check grade based on marks using if-else ladder
+        if (marks < 25) {
+            System.out.println("Grade: F"); // less than 25 = F
+        } else if (marks >= 25 && marks <= 44) {
+            System.out.println("Grade: E"); // 25 to 44 = E
+        } else if (marks >= 45 && marks <= 49) {
+            System.out.println("Grade: D"); // 45 to 49 = D
+        } else if (marks >= 50 && marks <= 59) {
+            System.out.println("Grade: C"); // 50 to 59 = C
+        } else if (marks >= 60 && marks <= 69) {
+            System.out.println("Grade: B"); // 60 to 69 = B
+        } else if (marks >= 70) {
+            System.out.println("Grade: A"); // 70 and above = A
+        } else {
+            System.out.println("Invalid marks entered."); // fallback in case of invalid input
+        }
+
+    }
+}
