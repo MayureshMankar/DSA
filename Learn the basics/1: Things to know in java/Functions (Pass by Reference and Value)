@@ -23,3 +23,42 @@ public class Main {
         scanner.close();                           // Close the scanner to prevent memory leak
     }
 }
+
+
+
+
+
+
+//second example
+
+public class Main {
+
+    // 🔹 Pass by Value (Primitive Type)
+    public static void changePrimitive(int x) {
+        x = 100;  // Only local copy changes
+        System.out.println("Inside changePrimitive: x = " + x);
+    }
+
+    // 🔹 Pass by Reference (Reference Type - Array)
+    public static void changeArray(int[] arr) {
+        arr[0] = 99;  // Modifies original array
+        System.out.println("Inside changeArray: arr[0] = " + arr[0]);
+    }
+
+    public static void main(String[] args) {
+        // Pass by value demo
+        int num = 50;
+        System.out.println("Before changePrimitive: num = " + num);
+        changePrimitive(num);
+        System.out.println("After changePrimitive: num = " + num);  // Unchanged
+
+        System.out.println();
+
+        // Pass by reference demo
+        int[] myArray = {1, 2, 3};
+        System.out.println("Before changeArray: myArray[0] = " + myArray[0]);
+        changeArray(myArray);
+        System.out.println("After changeArray: myArray[0] = " + myArray[0]);  // Changed
+    }
+}
+
